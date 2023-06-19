@@ -1,0 +1,16 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    { params: { id: '3' } },
+    // ? What is the best way to do this for my projects?
+  ]
+}
+
+const {id} = Astro.params;
+---
+
+<div>
+  {id}
+</div>
