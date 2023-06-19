@@ -1,55 +1,23 @@
-# Astro Starter Kit: Basics
+# PERSONAL WEBSITE (V3)
 
-```
-npm create astro@latest -- --template basics
-```
+## Description
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+This is the third version of my personal website. It is a static website built with [Astro](https://astro.build/) and hosted on [Netlify](https://www.netlify.com/).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Why V3?
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+My personal website has gone through a few iterations. V1.0 never deployed and was a huge mess of nonsensical code. V2.0 was built with [React](https://react.dev/) and deployed with [Vercel](https://vercel.com/). I was extremely happy with V2.0 for a bit until gathering performance metrics and realizing that it was a bit too heavy for my liking and a SPA was not the right tooling for my needs. 
 
+With V3.0, I decided to rebuild with [Astro](https://astro.build/), utilizing a small bundle size and static generation. Also, with Astro, I was able to utilize [TailwindCSS](https://tailwindcss.com/), my favorite CSS framework, and [SolidJS](https://www.solidjs.com/), a library I have been wanting to try out for a while, for Fine-grained reactivity and remarkable developer experience.
 
-## 🚀 Project Structure
+## Performance
 
-Inside of your Astro project, you'll see the following folders and files:
+I am extremely happy with the performance of this website. It is a static website with a bundle size of 6.5kb and a page size of 8.5kb. It scores a 100 on Lighthouse and a 100 on PageSpeed Insights. It is also a PWA and scores a 100 on the PWA audit.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Tools
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Astro](https://astro.build/)
+- [SolidJS](https://www.solidjs.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+- [Vite](https://vitejs.dev/)
