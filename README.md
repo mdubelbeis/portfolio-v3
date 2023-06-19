@@ -20,4 +20,4 @@ I am extremely happy with the performance of this website. It is a static websit
 - [SolidJS](https://www.solidjs.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [DaisyUI](https://daisyui.com/)
-- [Vite](https://vitejs.dev/)
+
