@@ -1,22 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Headshot from "../components/Headshot.astro";
+import HeroContent from "../components/HeroContent.astro";
 ---
 
 <Layout title="Mason J. Dubelbies">
   <main
-    class="flex h-screen w-screen items-center bg-gradient-to-r from-black to-darkPurple"
+    class="relative flex h-screen w-screen items-center p-3"
   >
-    <div class="mx-auto flex items-center justify-around gap-44 rounded p-10">
-      <section class="-ml-[50%]">
-        <img
-          src="/assets/headshot-bw.png"
-          alt="headshot"
-          class="rounded-full border-l-darkPurple shadow-lg"
-        />
-      </section>
-      <section>
-        <h1>HELLO!</h1>
-      </section>
+    <div class="mx-auto flex gap-32 lg:flex-row items-center justify-center rounded p-10">
+      <Headshot />
+      <HeroContent />
     </div>
   </main>
 </Layout>
