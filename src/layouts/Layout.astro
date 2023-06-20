@@ -44,7 +44,7 @@ const {title} = Astro.props;
   <body class="bg-gradient-to-r from-black to-darkPurple">
     <Header />
     <div class="text-primaryPink m-3 text-sm">
-      {path === '/' ? <a href="/">Home</a> : <a href="/"><span class={breadcrumbsStyle}>Home</span> &gt; </a> <span class={breadcrumbsStyle}>{titleCase(breadcrumbs)}</span>}
+      {path === '/' ? null : <a href="/"><span class={breadcrumbsStyle}>Home</span> &gt; </a> <span class={breadcrumbsStyle}>{titleCase(breadcrumbs)}</span>}
     </div>
     <slot />
   </body>
