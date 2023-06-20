@@ -11,10 +11,10 @@ import Button from '../../components/Button.astro';
   >
     {PROJECTS.map((project) => (
       <div class="w-full flex flex-wrap bg-transparent rounded text-center shadow-lg hover:cursor-pointer active:shadow-lg lg:mb-0 max-w-2xl mx-auto p-3">
-        <div class="flex h-full w-full flex-col gap-10 border-[1px] border-primaryPink border-opacity-50 p-10 rounded-xl">
+        <div class="flex h-full w-full flex-col gap-10 border-[1px] border-primaryPink border-opacity-50 p-3 rounded-xl">
           {project.demoLink ? (
             // embed demo video
-            <div class="video-responsive h-full md:h-[375px] w-full">
+            <div class="video-responsive h-[400px] w-full">
               <iframe
                 class="h-full w-full rounded-lg rounded-b-none"
                 src={project.demoLink}
