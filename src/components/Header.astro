@@ -1,10 +1,7 @@
 ---
-import { callGetStaticPaths } from "astro/dist/core/render/route-cache"
 const path = Astro.url.pathname
-console.log(path)
 
 const currentPage = path
-console.log(currentPage)
 
 let projectUnderline = ''
 let blogUnderline = ''
@@ -12,13 +9,13 @@ let contactUnderline = ''
 
 switch(currentPage) {
   case '/projects':
-    projectUnderline = 'border-b-2 border-primaryText';
+    projectUnderline = 'border-b-2 border-primaryText hover:text-primaryText';
     break;
   case '/blog':
-    blogUnderline = 'border-b-2 border-primaryText';
+    blogUnderline = 'border-b-2 border-primaryText hover:text-primaryText';
     break;
   case '/contact':
-    contactUnderline = 'border-b-2 border-primaryText';
+    contactUnderline = 'border-b-2 border-primaryText hover:text-primaryText hover:text-primaryText';
     break;
   default:
     break;
@@ -35,9 +32,3 @@ switch(currentPage) {
     </ul>
   </nav>
 </header>
-
-<style>
-  a:hover {
-    @apply hover:text-primaryText;
-  }
-</style>
