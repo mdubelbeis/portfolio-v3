@@ -1,17 +1,17 @@
 ---
-const SECTION_TEXT = 'text-3xl lg:text-6xl';
-const TITLE_TEXT = 'text-6xl lg:text-8xl font-bold text-pink-600';
+const SECTION_TEXT = 'text-3xl lg:text-6xl text-secondaryText';
+const TITLE_TEXT = 'text-6xl lg:text-8xl font-bold text-primaryText';
 ---
 
 <section class={SECTION_TEXT + ' text-center flex flex-col gap-6 -translate-y-16'}>
   <h3 class="font-dancing text-6xl">Hello, I am</h3>
   <div>
     <h1 class={TITLE_TEXT}>Mason Dubelbeis</h1>
-    <p class="text-lg lg:text-2xl text-dustyLilac">Full-Stack Software Engineer</p>
+    <p class="text-lg lg:text-2xl">Full-Stack Software Engineer</p>
   </div>
   <div class="">
     <a
-      class="drop-shadow-lg py-3 px-4 bg-primaryPink text-paleLilac rounded-lg hover:bg-paleLilac hover:text-primaryPink text-lg"
+      class="drop-shadow-lg py-3 px-4 bg-buttonBg hover:bg-buttonBgHover text-black rounded-lg hover:text-paleLilac text-lg"
       href="/assets/resume/dubelbeis_mason.pdf"
       target="_blank"
       rel="noopener noreferrer"

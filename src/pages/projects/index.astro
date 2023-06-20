@@ -3,14 +3,15 @@ import Layout from "../../layouts/Layout.astro";
 import {PROJECTS} from "../../data/projectData";
 import Button from '../../components/Button.astro';
 
+const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac'
 ---
 
 <Layout title="Projects">
-  <div class="text-primaryPink m-3 text-sm">
-    <a href="/"><span class="cursor-pointer hover:text-paleLilac hover:border-b-[1px] hover:border-b-paleLilac">Home</span> &gt; </a> <span class="cursor-pointer">Projects</span>
+  <div class="text-primaryText m-3 text-sm">
+    <a href="/"><span class={breadcrumbStyle}>Home</span> &gt; </a> <span class={breadcrumbStyle}>Projects</span>
   </div>
   <main
-    class="h-full w-full p-4 bg-gradient-to-r from-black to-darkPurple grid grid-cols-1 lg:grid-cols-2"
+    class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 lg:grid-cols-2"
   >
     {PROJECTS.map((project) => (
       <div class="w-full flex flex-wrap bg-transparent rounded text-center shadow-lg lg:mb-0 max-w-2xl mx-auto p-3">
@@ -34,8 +35,8 @@ import Button from '../../components/Button.astro';
               alt={project.projectName}
             />
           )}
-          <div class="w-full space-y-2 py-8 px-4 flex flex-col gap-10">
-            <p class="mb-4 text-4xl font-dancing tracking-wider text-primaryPink focus:text-blue-900 active:text-blue-900 md:text-6xl">
+          <div class="w-full space-y-2 py-8 px-4 flex flex-col gap-10 text-paleLilac">
+            <p class="mb-4 text-4xl font-dancing tracking-wider text-primaryText md:text-6xl">
               {project.projectName}
             </p>
             <p class="px-1">{project.projectText}</p>

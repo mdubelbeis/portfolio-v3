@@ -3,12 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import Headshot from "../components/Headshot.astro";
 import HeroContent from "../components/HeroContent.astro";
 
+const breadcrumbStyle = 'hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac'
+
 console.log(Astro.url.pathname)
 ---
 
 <Layout title="Mason J. Dubelbies">
-  <div class="text-primaryPink m-3 text-sm">
-    <span class="cursor-pointer hover:text-paleLilac hover:border-b-[1px] hover:border-b-paleLilac">Home</span>
+  <div class="text-primaryText m-3 text-sm">
+    <span class={breadcrumbStyle}>Home</span>
   </div>
   <main
     class="relative flex h-screen w-screen items-center p-3"

@@ -11,10 +11,10 @@
   }
 
   h1 {
-    @apply font-dancing;
+    @apply font-dancing text-primaryText;
   }
 
   h2 {
-    @apply font-dancing text-primaryPink;
+    @apply font-dancing text-paleLilac;
   }
 }
