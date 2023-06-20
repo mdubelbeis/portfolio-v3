@@ -14,13 +14,13 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
     class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 lg:grid-cols-2"
   >
     {PROJECTS.map((project) => (
-      <div class="w-full flex flex-wrap bg-transparent rounded text-center shadow-lg lg:mb-0 max-w-2xl mx-auto p-3">
-        <div class="flex h-full w-full flex-col gap-10 border-[1px] border-primaryPink border-opacity-50 p-3 rounded-xl hover:bg-">
+      <div class="w-full flex flex-wrap bg-transparent rounded text-center lg:mb-0 max-w-2xl mx-auto p-6">
+        <div class="flex h-full w-full flex-col gap-10 border-[1px] border-paleLilac p-2 rounded-xl shadow-xl">
           {project.demoLink ? (
             // embed demo video
             <div class="video-responsive h-[400px] w-full">
               <iframe
-                class="h-full w-full rounded-lg rounded-b-none"
+                class="h-full w-full rounded-lg shadow-xl"
                 src={project.demoLink}
                 title="YouTube video player"
                 frame-border="0"
@@ -35,11 +35,11 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
               alt={project.projectName}
             />
           )}
-          <div class="w-full space-y-2 py-8 px-4 flex flex-col gap-10 text-paleLilac">
+          <div class="w-full p-8 flex flex-col gap-10 text-paleLilac">
             <p class="mb-4 text-4xl font-dancing tracking-wider text-primaryText md:text-6xl">
               {project.projectName}
             </p>
-            <p class="px-1">{project.projectText}</p>
+            <p class="lg:h-[75px]">{project.projectText}</p>
             <div class="flex gap-3 justify-center">
               <Button link={`projects/${project.path}`} linkText="Project Info"/>
               <Button link={`${project.githubLink}`} linkText='Github' />
