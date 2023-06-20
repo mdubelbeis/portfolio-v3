@@ -75,7 +75,7 @@ export const PROJECTS = [
   {
     id: 4,
     projectLink: "https://mtg-life-counter-three.vercel.app/",
-    projectBgImg: { mtgLifeCounter },
+    projectBgImg: mtgLifeCounter,
     projectName: "MTG Life Counter",
     path: "mtg-life-counter",
     projectText:
@@ -92,7 +92,7 @@ export const PROJECTS = [
   {
     id: 5,
     projectLink: "https://the-gathering-bulletin.vercel.app/",
-    projectBgImg: { theGathering },
+    projectBgImg: theGathering,
     projectName: "The Gathering Bulletin",
     path: "the-gathering-bulletin",
     projectText:
@@ -122,7 +122,7 @@ export const PROJECTS = [
   {
     id: 7,
     projectLink: "https://sunnyside-agency-landing-page-kappa.vercel.app/",
-    projectBgImg: { sunnySide },
+    projectBgImg: sunnySide,
     projectName: "Sunny Side Agency",
     path: "sunny-side-agency",
     projectText: "A Frontendmentor.io web challenge",
@@ -132,7 +132,7 @@ export const PROJECTS = [
   {
     id: 8,
     projectLink: "https://intro-section-db-menu.vercel.app/",
-    projectBgImg: { snap },
+    projectBgImg: snap,
     projectName: "Snap",
     path: "snap",
     projectText: "A Frontendmentor.io web challenge",
@@ -142,7 +142,7 @@ export const PROJECTS = [
   {
     id: 9,
     projectLink: "https://tip-calculator-rose-eight.vercel.app/",
-    projectBgImg: { splitter },
+    projectBgImg: splitter,
     projectName: "Splitter",
     path: "splitter",
     projectText: "A Frontendmentor.io web challenge",
@@ -152,7 +152,7 @@ export const PROJECTS = [
   {
     id: 10,
     projectLink: "https://suite-landing-page-one.vercel.app/",
-    projectBgImg: { suite },
+    projectBgImg: suite,
     projectName: "Suite",
     path: "suite",
     projectText: "A Frontendmentor.io web challenge",
