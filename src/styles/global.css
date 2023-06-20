@@ -13,4 +13,8 @@
   h1 {
     @apply font-dancing;
   }
+
+  h2 {
+    @apply font-dancing text-primaryPink;
+  }
 }

@@ -13,7 +13,7 @@ export interface ProjectProps {
 export const PROJECTS = [
   {
     id: 1,
-    projectLink: "https://github.com/leodvincci/behav.io",
+    projectLink: null,
     projectBgImg: null,
     projectName: "Behav",
     path: "behav",
@@ -34,7 +34,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    projectLink: "https://github.com/mdubelbeis/life-kitz",
+    projectLink: null,
     projectBgImg: null,
     projectName: "Life Kitz",
     path: "life-kitz",
@@ -55,7 +55,7 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    projectLink: "https://github.com/mdubelbeis/stack-generator",
+    projectLink: null,
     projectBgImg: null,
     projectName: "Stack Gen",
     path: "stack-gen",
@@ -72,7 +72,7 @@ export const PROJECTS = [
     projectName: "MTG Life Counter",
     path: "mtg-life-counter",
     projectText:
-      "A web application to keep score of life total during Magic: The Gathering gameplay",
+      "A web application meant for mobile devices to keep score of life total during Magic: The Gathering gameplay",
     projectTech: [
       "React",
       "Typescript",
@@ -95,7 +95,7 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    projectLink: "https://github.com/mdubelbeis/poke-dex",
+    projectLink: null,
     projectBgImg: null,
     projectName: "PokeDex",
     path: "poke-dex",
@@ -152,13 +152,4 @@ export const PROJECTS = [
     projectTech: ["React", "Tailwind CSS"],
     githubLink: "https://github.com/mdubelbeis/suite-landing-page",
   },
-  // {
-  //   id: 7,
-  //   projectLink: '#',
-  //   projectBgImg: '/assets/imgs/project-imgs/markus-spiske-4PG6wLlVag4-unsplash.jpg',
-  //   projectName: 'Du-Bee Herbs',
-  //   projectText: 'A landing page for local spices and herbs store.',
-  //   projectTech: ['React-Ts', 'Tailwind CSS'],
-  //   githubLink: ''
-  // },
 ];

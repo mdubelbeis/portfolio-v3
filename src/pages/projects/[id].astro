@@ -1,4 +1,10 @@
 ---
+import Layout from '../../layouts/Layout.astro';
+import {PROJECTS} from '../../data/projectData';
+import titleCase from '../../utils/titleCase';
+import Button from '../../components/Button.astro';
+
+
 export function getStaticPaths() {
   return [
     { params: { id: 'behav' } },
@@ -11,13 +17,66 @@ export function getStaticPaths() {
     { params: { id: 'snap' } },
     { params: { id: 'splitter' } },
     { params: { id: 'suite' } },
-    // ? What is the best way to do this for my projects?
   ]
 }
 
 const {id} = Astro.params;
+const title: string | undefined = id?.replace(/-/g, ' ');
+console.log(titleCase(title))
+
+
+const breadcrumbsStyle = "cursor-pointer hover:text-paleLilac hover:border-b-[1px] hover:border-b-paleLilac"
+const project = PROJECTS.find(project => project.path === id);
+console.log(project)
+
 ---
 
-<div>
-  {id}
-</div>
+<Layout title={titleCase(id)}>
+  <div class="text-primaryPink m-3 text-sm">
+    <a href="/"><span class={breadcrumbsStyle}>Home</span> &gt; </a> <a href="/projects"><span class={breadcrumbsStyle}>Projects</span> &gt; </a> <span class={breadcrumbsStyle}>{titleCase(id)}</span>
+  </div>
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-paleLilac flex flex-col gap-20 my-10">
+    <h1 class="text-6xl text-center lg:text-7xl text-primaryPink border-b-[1px] border-paleLilac pb-2">
+      {project?.projectName}
+    </h1>
+    <section class="flex flex-col gap-20 text-center">
+      {project?.demoLink ? (
+        // embed demo video
+        <div class="video-responsive h-[250px] md:h-[350px] lg:h-[550px] w-full">
+          <iframe
+            class="h-full w-full rounded-lg rounded-b-none"
+            src={project.demoLink}
+            title="YouTube video player"
+            frame-border="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allow-full-screen
+          ></iframe>
+        </div>
+      ) : (
+        <img
+          class="h-full w-full rounded-lg rounded-b-none"
+          src={project?.projectBgImg?.toString()}
+          alt={project?.projectName}
+        />
+      )}
+      <section class="flex flex-col gap-10 max-w-2xl mx-auto">
+        <div class="space-y-4">
+          <h2 class='text-5xl'>About</h2>
+          <p>{project?.projectText}</p>
+        </div>
+        <div class="space-y-4">
+          <h2 class='text-5xl'>Tools Used</h2>
+          <ul>
+            {project?.projectTech.map(tech => (
+              <li><small>{tech}</small></li>
+            ))}
+          </ul>
+        </div>
+        <div class="space-x-6">
+          {project?.projectLink && <Button link={`${project?.projectLink}`} linkText='Visit Site' />}
+          <Button link={`${project?.githubLink}`} linkText='View Code' />
+        </div>
+      </section>
+    </section>
+  </main>
+</Layout>

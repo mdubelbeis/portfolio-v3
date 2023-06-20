@@ -6,12 +6,15 @@ import Button from '../../components/Button.astro';
 ---
 
 <Layout title="Projects">
+  <div class="text-primaryPink m-3 text-sm">
+    <a href="/"><span class="cursor-pointer hover:text-paleLilac hover:border-b-[1px] hover:border-b-paleLilac">Home</span> &gt; </a> <span class="cursor-pointer">Projects</span>
+  </div>
   <main
-    class="h-full w-full p-4 bg-gradient-to-r from-black to-darkPurple"
+    class="h-full w-full p-4 bg-gradient-to-r from-black to-darkPurple grid grid-cols-1 lg:grid-cols-2"
   >
     {PROJECTS.map((project) => (
-      <div class="w-full flex flex-wrap bg-transparent rounded text-center shadow-lg hover:cursor-pointer active:shadow-lg lg:mb-0 max-w-2xl mx-auto p-3">
-        <div class="flex h-full w-full flex-col gap-10 border-[1px] border-primaryPink border-opacity-50 p-3 rounded-xl">
+      <div class="w-full flex flex-wrap bg-transparent rounded text-center shadow-lg lg:mb-0 max-w-2xl mx-auto p-3">
+        <div class="flex h-full w-full flex-col gap-10 border-[1px] border-primaryPink border-opacity-50 p-3 rounded-xl hover:bg-">
           {project.demoLink ? (
             // embed demo video
             <div class="video-responsive h-[400px] w-full">
