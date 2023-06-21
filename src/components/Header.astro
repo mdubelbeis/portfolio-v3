@@ -2,20 +2,22 @@
 
 const {path} = Astro.props
 
-const noBottomBorder = 'border-b-2 border-transparent hover:border-primaryText hover:text-primaryText transition-all'
-const bottomBorder = 'border-b-2 border-primaryText'
+const noBottomBorder = 'border-b-2 border-transparent hover:border-buttonBg hover:text-buttonBg transition-all'
+const bottomBorder = 'border-b-2 border-buttonBg pb-1 text-buttonBg'
 
 const projectUnderline = path === 'projects' ? bottomBorder  : noBottomBorder
+const aboutUnderline = path === 'about' ? bottomBorder  : noBottomBorder
 const blogUnderline = path === 'blog' ? bottomBorder  : noBottomBorder
 const contactUnderline = path === 'contact' ? bottomBorder  : noBottomBorder
 
 ---
 
 <header class="text-secondaryText p-4">
-  <nav class="w-full flex justify-between items-center">
+  <nav class="w-full flex flex-col gap-5 md:flex-row justify-between items-center">
     <a href="/" class="text-4xl font-bold text-primaryText font-abril hover:text-paleLilac">M<sub class="text-paleLilac hover:text-primaryText">j</sub>D</a>
-    <ul class="flex gap-3">
+    <ul class="flex gap-6">
       <li><a href="/projects" class={projectUnderline}>Projects</a></li>
+      <li><a href="/about" class={aboutUnderline}>About</a></li>
       <li><a href="/blog" class={blogUnderline}>Blog</a></li>
       <li><a href="/contact" class={contactUnderline}>Contact</a></li>
     </ul>
