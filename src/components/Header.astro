@@ -1,18 +1,17 @@
 ---
 const path = Astro.url.pathname
 
-const currentPage = path
 
 
-const projectUnderline = await currentPage === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const blogUnderline = await currentPage === '/blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const contactUnderline = await currentPage === '/contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const projectUnderline = await path === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const blogUnderline = await path === '/blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const contactUnderline = await path === '/contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
 
 ---
 
 <header class="text-secondaryText p-4 flex justify-center lg:justify-end">
   <nav class="w-full lg:w-auto">
-    <ul class="flex justify-around lg:gap-6 w-full">
+    <ul class="flex justify-around lg:gap-6 w-full text-lg lg:text-2xl">
       <li><a href="/projects" class={projectUnderline}>Projects</a></li>
       <li><a href="/blog" class={blogUnderline}>Blog</a></li>
       <li><a href="/contact" class={contactUnderline}>Contact</a></li>
