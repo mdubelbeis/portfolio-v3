@@ -16,8 +16,8 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
     class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 lg:grid-cols-2 gap-10"
   >
     {PROJECTS.map((project) => (
-      <div class="w-full flex flex-wrap bg-transparent rounded text-center lg:mb-0 mx-auto">
-        <div class="flex h-full w-full flex-col gap-10 bg-slate-800 rounded-xl shadow-xl">
+      <div class="w-full flex flex-wrap bg-transparent rounded text-center lg:mb-0 justify-center">
+        <div class="flex h-full w-full flex-col gap-10 bg-slate-800 max-w-lg justify-center items-center rounded-xl shadow-xl">
           {project.demoLink ? (
             // embed demo video
             <div class="video-responsive h-[400px] w-full">
@@ -38,7 +38,7 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
             />
           )}
           <div class="w-full p-8 flex flex-col gap-10 text-paleLilac">
-            <h2 class="mb-4 text-4xl tracking-wider md:text-6xl">
+            <h2 class="mb-4 tracking-wider text-6xl">
               {project.projectName}
             </h2>
             <p class="lg:h-[75px]">{project.projectText}</p>
