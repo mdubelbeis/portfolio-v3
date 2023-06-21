@@ -16,7 +16,7 @@
   }
 
   a, span {
-    @apply text-primaryText font-sans;
+    @apply text-paleLilac font-sans;
   }
 }
   
