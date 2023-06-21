@@ -2,11 +2,12 @@
 
 const {path} = Astro.props
 
+const noBottomBorder = 'border-b-2 border-transparent hover:border-primaryText'
+const bottomBorder = 'border-b-2 border-primaryText'
 
-
-const projectUnderline = path === 'projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const blogUnderline = path === 'blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const contactUnderline = path === 'contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const projectUnderline = path === 'projects' ? bottomBorder  : noBottomBorder
+const blogUnderline = path === 'blog' ? bottomBorder  : noBottomBorder
+const contactUnderline = path === 'contact' ? bottomBorder  : noBottomBorder
 
 ---
 
