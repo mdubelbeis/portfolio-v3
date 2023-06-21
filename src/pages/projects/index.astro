@@ -5,15 +5,15 @@ import Button from '../../components/Button.astro';
 
 
 
-const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac'
+const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac text-sm'
 ---
 
 <Layout title="Projects" path='projects'>
-  <div class="text-primaryText m-3 text-sm">
+  <div class="text-primaryText m-3">
     <a href="/"><span class={breadcrumbStyle}>Home</span> <span class="text-buttonBg">&gt;</span> </a> <span class={breadcrumbStyle}>Projects</span>
   </div>
   <main
-    class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-10"
+    class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
   >
     {PROJECTS.map((project) => (
       <div class="w-full flex flex-wrap bg-transparent rounded text-center mt-16 justify-center">
