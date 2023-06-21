@@ -2,24 +2,13 @@
 const path = Astro.url.pathname
 
 const currentPage = path
+console.log(currentPage)
 
-let projectUnderline = ''
-let blogUnderline = ''
-let contactUnderline = ''
+const projectUnderline = currentPage === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const blogUnderline = currentPage === '/blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const contactUnderline = currentPage === '/contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
 
-switch(currentPage) {
-  case '/projects':
-    projectUnderline = 'border-b-2 border-primaryText hover:text-primaryText';
-    break;
-  case '/blog':
-    blogUnderline = 'border-b-2 border-primaryText hover:text-primaryText';
-    break;
-  case '/contact':
-    contactUnderline = 'border-b-2 border-primaryText hover:text-primaryText hover:text-primaryText';
-    break;
-  default:
-    break;
-}
+
 
 ---
 
