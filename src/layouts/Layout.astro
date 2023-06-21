@@ -4,13 +4,14 @@ import '../styles/global.css';
 
 export interface Props {
   title: string | undefined;
+  path: string | undefined;
 }
+const {title, path} = Astro.props;
 
-const path = Astro.url.pathname
+console.log(path)
 
 // I need to get the path from the router and use that for breadcrumbs
 
-const {title} = Astro.props;
 ---
 
 <!DOCTYPE html>

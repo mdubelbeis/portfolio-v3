@@ -8,7 +8,7 @@ import Button from '../../components/Button.astro';
 const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac'
 ---
 
-<Layout title="Projects">
+<Layout title="Projects" path='projects'>
   <div class="text-primaryText m-3 text-sm">
     <a href="/"><span class={breadcrumbStyle}>Home</span> <span class="text-primaryText">&gt;</span> </a> <span class={breadcrumbStyle}>Projects</span>
   </div>
@@ -17,7 +17,7 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
   >
     {PROJECTS.map((project) => (
       <div class="w-full flex flex-wrap bg-transparent rounded text-center lg:mb-0 mx-auto">
-        <div class="flex h-full w-full flex-col gap-10 bg-black p-2 rounded-xl shadow-xl">
+        <div class="flex h-full w-full flex-col gap-10 bg-black rounded-xl shadow-xl">
           {project.demoLink ? (
             // embed demo video
             <div class="video-responsive h-[400px] w-full">

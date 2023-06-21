@@ -3,9 +3,10 @@
 const {path} = Astro.props
 
 
-const projectUnderline = await path === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const blogUnderline = await path === '/blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const contactUnderline = await path === '/contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+
+const projectUnderline = path === 'projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const blogUnderline = path === 'blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const contactUnderline = path === 'contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
 
 ---
 
