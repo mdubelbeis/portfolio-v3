@@ -1,6 +1,6 @@
 ---
-const path = Astro.url.pathname
 
+const {path} = Astro.props
 
 
 const projectUnderline = await path === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'

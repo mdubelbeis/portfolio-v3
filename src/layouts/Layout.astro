@@ -6,6 +6,7 @@ export interface Props {
   title: string | undefined;
 }
 
+const path = Astro.url.pathname
 
 // I need to get the path from the router and use that for breadcrumbs
 
@@ -23,7 +24,7 @@ const {title} = Astro.props;
     <title>{title}</title>
   </head>
   <body class="tracking-wider">
-    <Header />
+    <Header path={path}/>
     <slot />
   </body>
 </html>
