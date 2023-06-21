@@ -22,7 +22,7 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
             // embed demo video
             <div class="video-responsive h-[400px] w-full">
               <iframe
-                class="h-full w-full rounded-xl shadow-xl"
+                class="h-full w-full rounded-xl rounded-b-none shadow-xl"
                 src={project.demoLink}
                 title="YouTube video player"
                 frame-border="0"
@@ -32,7 +32,7 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
             </div>
           ) : (
             <img
-              class="h-[400px] w-full rounded-xl object-cover shadow-xl"
+              class="h-[400px] w-full rounded-xl rounded-b-none object-cover shadow-xl"
               src={project.projectBgImg?.toString()}
               alt={project.projectName}
             />
