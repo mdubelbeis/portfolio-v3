@@ -102,6 +102,16 @@ export const PROJECTS = [
   },
   {
     id: 6,
+    projectLink: "https://sunnyside-agency-landing-page-kappa.vercel.app/",
+    projectBgImg: sunnySide,
+    projectName: "Sunny Side Agency",
+    path: "sunny-side-agency",
+    projectText: "A Frontendmentor.io web challenge",
+    projectTech: ["React", "Tailwind CSS"],
+    githubLink: "https://github.com/mdubelbeis/sunnyside-agency-landing-page",
+  },
+  {
+    id: 7,
     projectLink: null,
     projectBgImg: null,
     projectName: "PokeDex",
@@ -118,16 +128,6 @@ export const PROJECTS = [
     ],
     githubLink: "https://github.com/mdubelbeis/poke-dex",
     demoLink: "https://www.youtube.com/embed/bcODFshzq1E",
-  },
-  {
-    id: 7,
-    projectLink: "https://sunnyside-agency-landing-page-kappa.vercel.app/",
-    projectBgImg: sunnySide,
-    projectName: "Sunny Side Agency",
-    path: "sunny-side-agency",
-    projectText: "A Frontendmentor.io web challenge",
-    projectTech: ["React", "Tailwind CSS"],
-    githubLink: "https://github.com/mdubelbeis/sunnyside-agency-landing-page",
   },
   {
     id: 8,

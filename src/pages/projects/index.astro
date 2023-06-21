@@ -42,7 +42,8 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
               {project.projectName}
             </h2>
             <p class="lg:h-[100px] line-clamp-3">{project.projectText}</p>
-            <div class="flex flex-col gap-3 mx-auto">
+            <div class="flex flex-col gap-3 mx-auto w-7/12">
+              {project.projectLink && <Button link={`${project.projectLink}`} linkText='Live Demo' />}
               <Button link={`projects/${project.path}`} linkText="Project Info"/>
               <Button link={`${project.githubLink}`} linkText='Github' />
             </div>
