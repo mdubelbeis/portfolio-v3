@@ -13,11 +13,11 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
     <a href="/"><span class={breadcrumbStyle}>Home</span> <span class="text-primaryText">&gt;</span> </a> <span class={breadcrumbStyle}>Projects</span>
   </div>
   <main
-    class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 lg:grid-cols-2 gap-10"
+    class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-10"
   >
     {PROJECTS.map((project) => (
-      <div class="w-full flex flex-wrap bg-transparent rounded text-center lg:mb-0 justify-center">
-        <div class="flex h-full w-full flex-col gap-10 bg-slate-800 max-w-lg justify-center items-center rounded-xl shadow-xl">
+      <div class="w-full flex flex-wrap bg-transparent rounded text-center mt-16 justify-center">
+        <div class="flex h-full w-full flex-col bg-slate-900 justify-between items-center rounded-xl shadow-xl">
           {project.demoLink ? (
             // embed demo video
             <div class="video-responsive h-[400px] w-full">
@@ -37,12 +37,12 @@ const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 ho
               alt={project.projectName}
             />
           )}
-          <div class="w-full p-8 flex flex-col gap-10 text-paleLilac">
+          <div class="relative w-full p-8 flex flex-col gap-10 text-paleLilac">
             <h2 class="mb-4 tracking-wider text-6xl">
               {project.projectName}
             </h2>
-            <p class="lg:h-[75px]">{project.projectText}</p>
-            <div class="flex gap-3 justify-center">
+            <p class="lg:h-[100px] line-clamp-3">{project.projectText}</p>
+            <div class="flex flex-col gap-3 mx-auto">
               <Button link={`projects/${project.path}`} linkText="Project Info"/>
               <Button link={`${project.githubLink}`} linkText='Github' />
             </div>
