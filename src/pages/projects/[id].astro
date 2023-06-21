@@ -22,7 +22,7 @@ export function getStaticPaths() {
 
 const {id} = Astro.params;
 const title: string | undefined = id?.replace(/-/g, ' ');
-console.log(titleCase(title))
+
 
 
 const breadcrumbsStyle = "cursor-pointer hover:text-paleLilac hover:border-b-[1px] hover:border-b-paleLilac text-sm"
@@ -36,13 +36,13 @@ console.log(project)
     <a href="/"><span class={breadcrumbsStyle}>Home</span> <span class="text-buttonBg">&gt;</span> </a> <a href="/projects"><span class={breadcrumbsStyle}>Projects</span> <span class="text-buttonBg">&gt;</span> </a> <span class={breadcrumbsStyle}>{titleCase(id)}</span>
   </div>
   <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 text-paleLilac flex flex-col gap-20 my-10">
-    <h1 class="text-6xl text-center lg:text-7xl text-primaryPink">
+    <h1 class="text-6xl text-center lg:text-7xl text-buttonBg">
       {project?.projectName}
     </h1>
     <section class="flex flex-col gap-20 text-center">
       {project?.demoLink ? (
         // embed demo video
-        <div class="video-responsive h-[250px] md:h-[350px] lg:h-[550px] w-9/12 mx-auto">
+        <div class="video-responsive h-[250px] md:h-[350px] lg:h-[550px] w-full lg:w-9/12 mx-auto">
           <iframe
             class="h-full w-full rounded-lg rounded-b-none"
             src={project.demoLink}

@@ -1,5 +1,5 @@
-const titleCase = (str: string): string => {
-  return str
+const titleCase = (str: string | undefined): string => {
+  return str!
     .replaceAll("-", " ")
     .toLowerCase()
     .split(" ")
