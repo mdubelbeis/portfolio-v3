@@ -2,11 +2,11 @@
 const path = Astro.url.pathname
 
 const currentPage = path
-console.log(currentPage)
 
-const projectUnderline = currentPage === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const blogUnderline = currentPage === '/blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
-const contactUnderline = currentPage === '/contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+
+const projectUnderline = await currentPage === '/projects' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const blogUnderline = await currentPage === '/blog' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
+const contactUnderline = await currentPage === '/contact' ? 'border-b-2 border-primaryText' : 'border-b-2 border-transparent hover:border-primaryText'
 
 ---
 
