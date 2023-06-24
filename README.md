@@ -1,4 +1,4 @@
-# PERSONAL WEBSITE (V3)
+aby# PERSONAL WEBSITE (V3)
 
 ## Description
 
@@ -20,4 +20,12 @@ I am extremely happy with the performance of this website. It is a static websit
 - [SolidJS](https://www.solidjs.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [DaisyUI](https://daisyui.com/)
+- [iconscout](https://iconscout.com/)
 
+## IconScout
+
+- [LinkedIn Icon](https://iconscout.com/icons/linkedin") by [Luc Chaffard](https://iconscout.com/contributors/luc-chaffard)
+
+- [Twitter Icon]()
+
+- [GitHub Icon](https://iconscout.com/icons/github) by [Unicons Font](https://iconscout.com/contributors/unicons)
