@@ -16,7 +16,7 @@
   }
 
   a, span {
-    @apply text-paleLilac font-dancing text-3xl lg:text-4xl;
+    @apply text-paleLilac font-dancing text-2xl lg:text-3xl;
   }
 }
   
