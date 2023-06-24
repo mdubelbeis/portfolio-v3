@@ -18,6 +18,14 @@
   a, span {
     @apply text-paleLilac font-dancing text-2xl lg:text-3xl;
   }
+
+  #btn {
+    @apply text-paleLilac font-sans text-[1rem] lg:text-xl;
+  }
+
+  .breadcrumbs {
+    @apply text-paleLilac text-[1rem] lg:text-xl;
+  }
 }
   
 

@@ -6,6 +6,6 @@ interface Props {
 const { linkText, link } = Astro.props;
 ---
 
-<a href={link} target="_blank" class={'py-2 px-3 bg-buttonBg text-black text-lg hover:bg-buttonBgHover rounded-lg hover:text-paleLilac'}>
+<a id="btn" href={link} target="_blank" class={'py-2 px-3 bg-buttonBg text-black text-lg hover:bg-buttonBgHover rounded-lg hover:text-paleLilac'}>
   {linkText}
 </a>

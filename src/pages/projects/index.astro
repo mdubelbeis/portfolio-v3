@@ -5,12 +5,13 @@ import Button from '../../components/Button.astro';
 
 
 
-const breadcrumbStyle = 'cursor-pointer hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac text-sm'
+const breadcrumbStyle = 'font-sans text-primaryText cursor-pointer hover:text-paleLilac hover:border-b-2 hover:border-b-paleLilac text-sm'
+const activePath = " border-b-[1px] border-b-paleLilac border-opacity-50 pb-[2px]"
 ---
 
 <Layout title="Projects" path='projects'>
   <div class="text-primaryText m-3">
-    <a href="/"><span class={breadcrumbStyle}>Home</span> <span class="text-buttonBg">&gt;</span> </a> <span class={breadcrumbStyle}>Projects</span>
+    <a href="/"><span class={breadcrumbStyle}>Home</span> <span class="text-buttonBg">&gt;</span> </a> <span class={breadcrumbStyle + activePath}>Projects</span>
   </div>
   <main
     class="h-full w-full p-4 bg-gradient-to-r from-black to-primaryBg grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
